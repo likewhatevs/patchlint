@@ -15,8 +15,8 @@ class TestGenerateTestBlurb:
         assert "allmodconfig: no new warnings" in blurb
         assert "allyesconfig: no new warnings" in blurb
         assert "compared to abc123def456" in blurb
-        assert "Booting defconfig kernel via vng: OK" in blurb
-        assert "uname -a: Linux (none) 6.12.0-rc1" in blurb
+        assert "Booting defconfig kernel via vng and running `uname -a`:" in blurb
+        assert "  Linux (none) 6.12.0-rc1" in blurb
 
     def test_new_warnings(self):
         blurb = generate_test_blurb(

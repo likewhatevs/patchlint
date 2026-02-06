@@ -486,9 +486,11 @@ def generate_test_blurb(
             )
 
     if boot_ok:
-        lines.append("- Booting defconfig kernel via vng: OK")
         if uname_output:
-            lines.append(f"  uname -a: {uname_output}")
+            lines.append("- Booting defconfig kernel via vng and running `uname -a`:")
+            lines.append(f"  {uname_output}")
+        else:
+            lines.append("- Booting defconfig kernel via vng: OK")
     else:
         lines.append("- Booting defconfig kernel via vng: FAILED")
 

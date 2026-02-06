@@ -55,8 +55,8 @@ Example output:
 This patch was tested by:
 - Building with allmodconfig: no new warnings (compared to abc123def456)
 - Building with allyesconfig: no new warnings (compared to abc123def456)
-- Booting defconfig kernel via vng: OK
-  uname -a: Linux (none) 6.18.0 #1 SMP x86_64 GNU/Linux
+- Booting defconfig kernel via vng and running `uname -a`:
+  Linux (none) 6.18.0 #1 SMP x86_64 GNU/Linux
 ```
 
 Exit codes: 0 = clean, 1 = new warnings or boot failure, 2 = build/checkpatch failure.
