@@ -1,0 +1,19 @@
+# build-log mode
+# config=allmodconfig
+# cmd: vng --clean
+# cmd: make allmodconfig
+# cmd: ./scripts/config -d WERROR
+# cmd: make olddefconfig
+# cmd: vng --build --skip-config
+  CC      drivers/net/ethernet/intel/e1000e/netdev.o
+drivers/net/ethernet/intel/e1000e/netdev.c:3456:12: warning: unused variable 'ret' [-Wunused-variable]
+  CC      drivers/gpu/drm/i915/display/intel_display.o
+drivers/gpu/drm/i915/display/intel_display.c:1234:5: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  CC      fs/btrfs/extent_tree.o
+fs/btrfs/extent_tree.c:567:20: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
+  CC      kernel/sched/fair.o
+  CC      mm/memory.o
+  CC      net/core/sock.o
+net/core/sock.c:890:3: warning: format '%lu' expects argument of type 'long unsigned int', but argument 3 has type 'size_t' [-Wformat=]
+  LD      vmlinux
+  OBJCOPY arch/x86/boot/bzImage

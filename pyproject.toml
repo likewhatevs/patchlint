@@ -1,0 +1,21 @@
+[project]
+name = "patchlint"
+version = "0.1.0"
+description = "Help with basic checking of kernel patches"
+readme = "README.md"
+license = "GPL-2.0-only"
+requires-python = ">=3.11"
+dependencies = ["click>=8.1"]
+
+[project.scripts]
+patchlint = "patchlint:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2.0",
+  "pytest-cov>=7.0.0",
+]
+
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"

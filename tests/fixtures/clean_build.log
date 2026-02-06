@@ -1,0 +1,15 @@
+# build-log mode
+# config=allmodconfig
+# cmd: vng --clean
+# cmd: make allmodconfig
+# cmd: ./scripts/config -d WERROR
+# cmd: make olddefconfig
+# cmd: vng --build --skip-config
+  CC      init/main.o
+  CC      init/version.o
+  CC      kernel/fork.o
+  CC      kernel/exit.o
+  CC      mm/mmap.o
+  CC      mm/page_alloc.o
+  LD      vmlinux
+  OBJCOPY arch/x86/boot/bzImage

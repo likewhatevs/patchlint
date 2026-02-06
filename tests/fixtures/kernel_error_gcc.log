@@ -1,0 +1,6 @@
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+ccache: error: failed to create temporary file for /run/user/1000/ccache-tmp/cpp_stdout.tmp.Dwhya7.i: Permission denied
+make[2]: *** [scripts/Makefile.host:131: scripts/kconfig/conf.o] Error 1
+make[1]: *** [/src/linux/Makefile:742: allmodconfig] Error 2
+make: *** [Makefile:248: __sub-make] Error 2
