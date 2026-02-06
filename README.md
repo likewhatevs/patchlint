@@ -1,5 +1,8 @@
 # patchlint
 
+[![actions](https://github.com/likewhatevs/patchlint/actions/workflows/ci.yml/badge.svg)](https://github.com/likewhatevs/patchlint/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/github/likewhatevs/patchlint/graph/badge.svg?token=Q0IYSQMW55)](https://codecov.io/github/likewhatevs/patchlint)
+
 Help with basic checking of kernel patches
 
 Runs `checkpatch.pl`, builds `allmodconfig` and `allyesconfig` for both a
